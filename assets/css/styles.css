@@ -1,0 +1,6 @@
+.navbar.navbar-dark.bg-dark{
+    background: rgb(4,66,122);
+    background: -moz-radial-gradient(circle, rgba(4,66,122,1) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(4,66,122,1) 0%, rgba(0,0,0,1) 100%);
+    background: radial-gradient(circle, rgba(4,66,122,1) 0%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#04427a",endColorstr="#000000",GradientType=1);}

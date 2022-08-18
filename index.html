@@ -10,22 +10,227 @@
     <!-- agregamos el framework de bootstrap para css tiene cosas lindas de edicion-->
     <script src="https://kit.fontawesome.com/682c578949.js" crossorigin="anonymous"></script>
     <!-- enlace para utilizar las fuentes de iconos, tachitos de basura, redes sociales y demas-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-dark">>
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="assets/img/APLogo-20-20 (1).png" alt="" width="150"
-            height="">
-          </a>
-          <ul class="list-group list-group-horizontal">
-           <li class="list-group-item"> <i class="fa-brands fa-instagram fa-2xl"></i></li>
-           <li class="list-group-item"> <i class="fa-brands fa-instagram fa-2xl"></i></li>
-           <li class="list-group-item"> <i class="fa-brands fa-instagram fa-2xl"></i></li>
-          </ul>
+<header>
+   <!--agregamos el logo de arg programa y la navbar extraida totalmente de bootstrap, la cual editamos y modificamos los nombres(contenidos)-->
+<nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-xl">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="assets/img/APLogo-20-20 (1).png" alt="" width="150">
+    </a>
+        <!--utilizamos ul para generar una lista y con las clases y sus valores hacemos que la lista se vea horizontal y no vertical-->
+      <ul class="list-group list-group-horizontal">
+         <li class="list-group-item"> <i class="fa-brands fa-instagram fa-2xl"></i></li>
+         <li class="list-group-item"> <i class="fa-brands fa-linkedin fa-2xl"></i></li>
+         <li class="list-group-item"> <i class="fa-brands fa-whatsapp fa-2xl"></i></li>
+           <!-- Button trigger modal(lo incluimos al icono extraido de fonts al boton de apertura de la ventana modal agregando las clases correspondientes) -->
+         <li class="list-group-item"> 
+           <i class="fa-solid fa-user-lock fa-2xl" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+           </i>
+         </li>
+      </ul>
+  </div>
+</nav>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+        <div class="modal-body">
+         <div class="mb-3 row">
+           <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+           <div class="col-sm-10">
+             <input type="text" class="form-control" id="staticEmail" value="email@example.com">
+           </div>
+         </div>
+         <div class="mb-3 row">
+          <label for="inputPassword" class="col-sm-2 col-form-label">
+            Password
+          </label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword">
+          </div>
         </div>
-    </nav>
-    
+       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">
+          Iniciar Sesion
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+  <main>
+    <!--seccion de presntacion, conteiner que contiene la foto, mi carta con contactos y links a algunas redes-->
+    <section id="about me" class="container-fluid about">
+        <div class="row">
+          <div class=" text-center col-xxl-3 col-xl-6 mt-5 pt-4">    
+             <img src="assets/img/7E69EA7E-7AF4-4184-B729-1DAE91A04E2B.jpeg" class="rounded-circle w-75" alt="..." title="...">
+          </div>
+          <div class="col-xxl-6">
+            <figure class="text-center">
+              <blockquote class="blockquote">
+                <p><h2><STROng>
+                  CESAR RAÚL HUICI
+                </h2></p></STROng>
+              </blockquote>
+            </figure>
+            <div class="row">
+              <div class="col-3">
+              </div>
+            <div class="card text-center h-10 col-xl-6 col-sm-6">
+              <div class="card-body text-center">
+                <h5 class="card-title"> 
+                  <p><h2><STROng>
+                  FULLSTACK WEB DEVELOPER
+                  </p></h2></STROng> 
+                </h5>
+                <h6 class="card-subtitle mb-2 text-muted">              
+                  Corrientes, Argentina - +543777593306<br>- cesarhuici1@gmail.com -
+                </h6>
+                <a href="#" class="card-link">
+                  Card link
+                </a>
+                <a href="#" class="card-link">
+                  Another link
+                </a>
+              </div>
+            </div>
+           </div>
+          </div>
+        <div class=" containar-text-center col-3">
+      </div>
+    </div>
+</section>
+<!--seccion que contien una informacion sobre mi y mis competencias profesionales-->
+<section id="Competencias" class="conteiner-fluid row mt-3">
+    <div class="col-2">
+    </div>
+    <div class="text-left col-8">
+      <h4>
+        Programador web FullStack con conocimientos en JavaScript, Html, Css, C++, MySql y Solidity. Estudiante de la carrerar Licenciatura en Sistemas de Informacion en La facultad Nacional Del Nordeste Argentino la cual me brindo las bases de la programacion y del pensamiento computacional. Certificado en Argentina Programa como Programador Web FullStack. Tengo conocimientos en Ingles adquiridos tanto en la facultad como en la academia de ingles de Platzi. 
+      </h4>
+    </div>
+  <div class="row conocimientos">
+    <div class="col-2">
+    </div>
+     <div class="card col-8 conocimientos"><!--aca utilizo una card body para poner todas mis competencias dentro de ella en una lista-->
+         <div class="row">
+            <div class="col-2">
+            </div>
+            <div class="col-4 text-left">       
+             <p><h3><STROng>
+              Competencias
+             </h3></p></STROng>
+            </div>
+        </div>  
+        <div class="row">
+          <div class="col-2">
+          </div>
+          <div class="col-6">
+           <ul>
+               <li>JavaScript</li>
+               <li>C++</li>
+               <li>Html</li>
+               <li>Css</li>
+               <li>Solidity</li>
+               <li>MySql</li>
+               <li>Excel</li>
+               <li>Blockchain: Uso de plataformas descentralizadas, billeteras y analisis de proyectos</li>
+               <li>Trading y analisis de mercados financieros</li>
+           </ul>
+          </div>
+         <div class="col-2">
+         </div>
+        </div>
+     </div>
+  </div>
+</section>
+<section id="Hard y soft skills" class="skills"><!--seccion donde utilice una carta con imagenes extraidas desde bootstrap y a cada carta le agregue una progress bar para amdir las capacidades en porcentajes-->
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-1">
+          </div>
+          <div class="card col-10 text-center">
+          <div class="card-title principal">
+            <p><h2><STROng>
+              Hard & Soft Skills
+            </h2></p></STROng>
+          </div>
+    <div class="card-body">
+     <div class="row">
+        <div class="col-2 mt-2">
+        </div>      
+        <div class="col-4">
+            <div class="card h-100">
+                <img src="assets/img/pexels-pixabay-159581.jpg" class="card-img-top" alt="...">
+                 <div class="card-body">
+                    <h5 class="card-title">Ingles</h5>
+                    <p class="card-text">
+                      <div class="progress">
+                      <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div></p>
+                 </div>
+            </div>
+        </div>
+          <div class="col-4">
+            <div class="card h-100">
+                <img src="assets/img/pexels-miguel-á-padriñán-194094.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Liderazgo</h5>
+                  <p class="card-text"><div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div></p>
+                  </div>
+            </div>
+          </div>
+      </div>
+      <div class="row mt-2">
+         <div class="col-2">
+         </div>
+        <div class="col-4">
+            <div class="card h-100">
+              <img src="assets/img/pexels-rodnae-productions-8369593.jpg" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">Blockchain</h5>
+                 <p class="card-text"><div class="progress">
+                   <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                 </div></p>
+               </div>
+            </div>
+            </div>
+        <div class="col-4">
+            <div class="card h-100">
+            <img src="assets/img/pexels-pixabay-270348.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Programacion Web</h5>
+                <p class="card-text">
+                <div class="progress">
+              <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        <div class="col-1">
+       </div>
+    </div>    
+   </div>
+  </div>
+</div>
+</section>
+  </main>
+  <footer>
+    <H2>
+      Contenido creado por Cesar Raul Huici
+    </H2>
+  </footer>        
+        
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 <!-- agregamos el bootstrap para js para usar ventanitas por ej-->
 
